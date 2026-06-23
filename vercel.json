@@ -1,0 +1,23 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/cong-tac-sinh-vien/",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/cong-tac-sinh-vien/(.*\\..*)",
+      "destination": "/$1"
+    },
+    {
+      "source": "/cong-tac-sinh-vien/:path*",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/((?!cong-tac-sinh-vien).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
