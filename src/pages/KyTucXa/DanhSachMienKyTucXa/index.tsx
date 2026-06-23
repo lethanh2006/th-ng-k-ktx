@@ -200,8 +200,8 @@ const DanhSachMienKyTucXa = () => {
 				formProps={{ danhSachId: currentDanhSachMien?._id, maHocKy: recHocKy?.ma, getData }}
 				scroll={{ x: 1300 }}
 				buttons={{
-					import: false,
-					export: false,
+					import: true,
+					export: true,
 					create: !!currentDanhSachMien?._id,
 				}}
 				// otherButtons={[
